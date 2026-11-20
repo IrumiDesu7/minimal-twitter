@@ -84,6 +84,9 @@ export const changePromotedPosts = (removePromotedPosts) => {
         `
         ${selectors.promotedPost} {
           display: list-item;
+          height: auto;
+          overflow: visible;
+          visibility: visible;
         }
         `
       );
