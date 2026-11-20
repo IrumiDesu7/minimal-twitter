@@ -29,9 +29,9 @@ selectors.sidebarLinks = {
   grok: `${selectors.leftSidebarLinks} > a[href*="grok"]`,
 };
 selectors.accountSwitcherButton = `[data-rail-overflow] + div > button`;
-selectors.leftSidebarLabel = `${selectors.leftSidebarLinks} > a > span > span:last-child`;
+selectors.leftSidebarLabel = `${selectors.leftSidebarLinks} > :is(a, button) > span > span:last-child`;
 selectors.accountSwitcherLabel = `${selectors.accountSwitcherButton} > span:not(:first-child)`;
-selectors.leftSidebarLabel_hover = `${selectors.leftSidebarLinks}:hover > a > span > span:last-child`;
+selectors.leftSidebarLabel_hover = `${selectors.leftSidebarLinks}:hover > :is(a, button) > span > span:last-child`;
 selectors.accountSwitcherLabel_hover = `${selectors.accountSwitcherButton}:hover > span:not(:first-child)`;
 selectors.rightSidebar = `${selectors.mainColumn} + aside`;
 selectors.trendsSection = `${selectors.rightSidebar} section:has(> a[href="/explore"])`;
