@@ -59,7 +59,7 @@ selectors.searchListBox = `${selectors.searchBox} [role="listbox"]`;
 // Composer
 selectors.composerForm = `form:has(textarea)`;
 // Modals
-selectors.modalWrapper = `[role="dialog"][data-slot="xds-modal-surface"]`;
+selectors.modalWrapper = `[role="dialog"][data-slot="xds-modal-surface"][aria-labelledby]`;
 selectors.modalUi = `${selectors.modalWrapper} [data-slot="xds-modal-content-box"]`;
 selectors.tweetButton = `#sidebar-compose-post`;
 // Settings

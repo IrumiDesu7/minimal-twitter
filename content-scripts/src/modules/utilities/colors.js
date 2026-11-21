@@ -30,6 +30,7 @@ export const extractColorsAsRootVars = () => {
   extractColor("div > span", "main-text");
   extractColor("a > time", "secondary-text");
   extractColor("main article a > time", "secondary-text");
+  extractColor(".text-brand", "accent");
   extractColor("a", "accent");
   extractColor("div > svg", "glyphs");
 };
