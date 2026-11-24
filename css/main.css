@@ -13,7 +13,7 @@ a[href*="quick_promote_web"] {
 
 /* Ads are the only timeline posts without a timestamp link to their own status.
    X ignores zero-height posts when it positions the list, so keep 1px to close the gap. */
-main li:has(> [role="link"] > article):not(:has(> [role="link"] > article a[href*="/status/"]:not([href$="/analytics"], [href*="/photo/"], [href*="/video/"]))) {
+main li:is(:has(> [role="link"] > article), :has(> div > [role="link"] > article)):not(:has([role="link"] > article a[href*="/status/"]:not([href$="/analytics"], [href*="/photo/"], [href*="/video/"]))) {
   height: 1px;
   overflow: hidden;
   visibility: hidden;

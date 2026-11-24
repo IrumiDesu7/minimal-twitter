@@ -49,7 +49,7 @@ selectors.menuItem = `div[role='menuitem'][tabindex='0']`;
 selectors.tweetCounts = `article [role="group"]`;
 selectors.viewCount = selectors.tweetCounts + " a[href$='/analytics']";
 selectors.tweet = `article`;
-selectors.promotedPost = `${selectors.mainColumn} li:has(> [role="link"] > article):not(:has(> [role="link"] > article a[href*="/status/"]:not([href$="/analytics"], [href*="/photo/"], [href*="/video/"])))`;
+selectors.promotedPost = `${selectors.mainColumn} li:is(:has(> [role="link"] > article), :has(> div > [role="link"] > article)):not(:has([role="link"] > article a[href*="/status/"]:not([href$="/analytics"], [href*="/photo/"], [href*="/video/"])))`;
 selectors.engagementAction = (action) => `[data-engagement-action="${action}"]`;
 
 // Search
