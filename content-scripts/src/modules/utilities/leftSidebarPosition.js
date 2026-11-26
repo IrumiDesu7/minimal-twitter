@@ -9,7 +9,7 @@ export function updateLeftSidebarPositioning() {
           ${selectors.pageWrapper} {
             max-width: none !important;
           }
-          div:has(> div > ${selectors.mainColumn}) {
+          div:has(> div > ${selectors.mainColumn}):has(> div [data-rail-overflow]) {
             justify-content: center;
             overflow-x: clip;
           }
